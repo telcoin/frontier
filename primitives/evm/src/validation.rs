@@ -187,12 +187,12 @@ impl<'config, E: From<InvalidEvmTransactionError>> CheckEvmTransaction<'config, 
 			let transaction_cost = if self.transaction.to.is_some() {
 				evm::gasometer::call_transaction_cost(
 					&self.transaction.input,
-					&self.transaction.access_list,
+					self.transaction.access_list.as_slice(),
 				)
 			} else {
 				evm::gasometer::create_transaction_cost(
 					&self.transaction.input,
-					&self.transaction.access_list,
+					self.transaction.access_list.as_slice(),
 				)
 			};
 
