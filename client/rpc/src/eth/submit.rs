@@ -41,6 +41,8 @@ use crate::{
 	internal_err,
 };
 
+use ethereum::EnvelopedDecodable;
+
 impl<B, C, P, CT, BE, H: ExHashT, A: ChainApi> Eth<B, C, P, CT, BE, H, A>
 where
 	B: BlockT<Hash = H256> + Send + Sync + 'static,
@@ -228,7 +230,8 @@ where
 			// We re-encode the payload input to get a valid rlp, and the decode implementation will strip
 			// them to check the transaction version byte.
 			let extend = rlp::encode(&slice);
-			match rlp::decode::<ethereum::TransactionV2>(&extend[..]) {
+			// match rlp::decode::<ethereum::TransactionV2>(&extend[..]) {
+			match ethereum::TransactionV2::decode(&extend[..]) {
 				Ok(transaction) => transaction,
 				Err(_) => return Err(internal_err("decode transaction failed")),
 			}

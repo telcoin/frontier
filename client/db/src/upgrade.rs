@@ -233,7 +233,8 @@ where
 	// Get all the block hashes we need to update
 	let ethereum_hashes: Vec<_> = db
 		.iter(crate::columns::BLOCK_MAPPING)
-		.map(|entry| entry.0)
+		.into_iter()
+		.map(|entry| entry.unwrap().0.into_boxed_slice() )
 		.collect();
 
 	// Read and update each entry in db transaction batches
