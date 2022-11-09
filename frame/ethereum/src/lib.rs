@@ -394,9 +394,9 @@ impl<T: Config> Pallet<T> {
 			cumulative_gas_used = used_gas;
 			Self::logs_bloom(logs, &mut logs_bloom);
 		}
-
 		let ommers = Vec::<ethereum::Header>::new();
-		let receipts_root = ethereum::util::ordered_trie_root(receipts.iter().map(rlp::encode));
+		// let receipts_root = ethereum::util::ordered_trie_root(receipts.iter().map(rlp::encode));
+		let receipts_root = ethereum::util::ordered_trie_root(receipts.iter().map(|r| rlp::encode(r)));
 		let partial_header = ethereum::PartialHeader {
 			parent_hash: if block_number > U256::zero() {
 				BlockHash::<T>::get(block_number - 1)
