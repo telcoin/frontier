@@ -29,6 +29,7 @@ mod mock;
 #[cfg(all(feature = "std", test))]
 mod tests;
 
+use ethereum::EnvelopedEncodable;
 use ethereum_types::{Bloom, BloomInput, H160, H256, H64, U256};
 use evm::ExitReason;
 use fp_consensus::{PostLog, PreLog, FRONTIER_ENGINE_ID};
@@ -395,8 +396,7 @@ impl<T: Config> Pallet<T> {
 			Self::logs_bloom(logs, &mut logs_bloom);
 		}
 		let ommers = Vec::<ethereum::Header>::new();
-		// let receipts_root = ethereum::util::ordered_trie_root(receipts.iter().map(rlp::encode));
-		let receipts_root = ethereum::util::ordered_trie_root(receipts.clone().into_iter().map(|r| rlp::encode(&ethereum::EIP658ReceiptData::from(r))));
+		let receipts_root = ethereum::util::ordered_trie_root(receipts.iter().map(|r| r.encode_payload()));
 		let partial_header = ethereum::PartialHeader {
 			parent_hash: if block_number > U256::zero() {
 				BlockHash::<T>::get(block_number - 1)
