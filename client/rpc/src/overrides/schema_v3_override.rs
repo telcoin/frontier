@@ -57,7 +57,11 @@ where
 	BE::State: StateBackend<BlakeTwo256>,
 {
 	fn query_storage<T: Decode>(&self, id: &BlockId<B>, key: &StorageKey) -> Option<T> {
-		if let Ok(Some(data)) = self.client.storage(id, key) {
+		let hash = match id {
+			BlockId::Hash(h) => h.to_owned(),
+			_ => todo!(),
+		};
+		if let Ok(Some(data)) = self.client.storage(hash, key) {
 			if let Ok(result) = Decode::decode(&mut &data.0[..]) {
 				return Some(result);
 			}

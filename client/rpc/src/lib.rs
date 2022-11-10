@@ -151,7 +151,11 @@ pub mod frontier_backend_client {
 		BE: Backend<B> + 'static,
 		BE::State: StateBackend<BlakeTwo256>,
 	{
-		match client.storage(&at, &StorageKey(PALLET_ETHEREUM_SCHEMA.to_vec())) {
+		let hash = match at {
+			BlockId::Hash(h) => h,
+			_ => todo!(),
+		};
+		match client.storage(hash, &StorageKey(PALLET_ETHEREUM_SCHEMA.to_vec())) {
 			Ok(Some(bytes)) => Decode::decode(&mut &bytes.0[..])
 				.ok()
 				.unwrap_or(EthereumStorageSchema::Undefined),
