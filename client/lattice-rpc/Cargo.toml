@@ -1,7 +1,7 @@
 [package]
-name = "fc-rpc"
+name = "lattice-fc-rpc"
 version = "2.0.0-dev"
-authors = ["Parity Technologies <admin@parity.io>"]
+authors = ["Parity Technologies <admin@parity.io>", "Telcoin, LLC"]
 edition = "2021"
 license = "GPL-3.0-or-later WITH Classpath-exception-2.0"
 description = "Ethereum RPC (web3) compatibility layer for Substrate."
