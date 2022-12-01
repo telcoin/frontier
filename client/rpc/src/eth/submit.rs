@@ -19,9 +19,9 @@
 use ethereum_types::H256;
 use futures::future::TryFutureExt;
 use jsonrpsee::core::RpcResult as Result;
-// Substrate
+
 use sc_client_api::backend::{Backend, StateBackend, StorageProvider};
-use sc_network_common::ExHashT;
+use sc_network::ExHashT;
 use sc_transaction_pool::ChainApi;
 use sc_transaction_pool_api::TransactionPool;
 use sp_api::{ApiExt, ProvideRuntimeApi};
@@ -32,16 +32,11 @@ use sp_runtime::{
 	traits::{BlakeTwo256, Block as BlockT},
 	transaction_validity::TransactionSource,
 };
-// Frontier
+
 use fc_rpc_core::types::*;
 use fp_rpc::{ConvertTransaction, ConvertTransactionRuntimeApi, EthereumRuntimeRPCApi};
 
-use crate::{
-	eth::{format, Eth},
-	internal_err,
-};
-
-use ethereum::EnvelopedDecodable;
+use crate::{eth::Eth, internal_err};
 
 impl<B, C, P, CT, BE, H: ExHashT, A: ChainApi> Eth<B, C, P, CT, BE, H, A>
 where
@@ -207,7 +202,7 @@ where
 		self.pool
 			.submit_one(&block_hash, TransactionSource::Local, extrinsic)
 			.map_ok(move |_| transaction_hash)
-			.map_err(|err| internal_err(format::Geth::pool_error(err)))
+			.map_err(|err| internal_err(format!("submit transaction to pool failed: {:?}", err)))
 			.await
 	}
 
@@ -216,7 +211,7 @@ where
 		if slice.is_empty() {
 			return Err(internal_err("transaction data is empty"));
 		}
-		let first = slice.first().unwrap();
+		let first = slice.get(0).unwrap();
 		let transaction = if first > &0x7f {
 			// Legacy transaction. Decode and wrap in envelope.
 			match rlp::decode::<ethereum::TransactionV0>(slice) {
@@ -230,8 +225,7 @@ where
 			// We re-encode the payload input to get a valid rlp, and the decode implementation will strip
 			// them to check the transaction version byte.
 			let extend = rlp::encode(&slice);
-			// match rlp::decode::<ethereum::TransactionV2>(&extend[..]) {
-			match ethereum::TransactionV2::decode(&extend[..]) {
+			match rlp::decode::<ethereum::TransactionV2>(&extend[..]) {
 				Ok(transaction) => transaction,
 				Err(_) => return Err(internal_err("decode transaction failed")),
 			}
@@ -295,7 +289,7 @@ where
 		self.pool
 			.submit_one(&block_hash, TransactionSource::Local, extrinsic)
 			.map_ok(move |_| transaction_hash)
-			.map_err(|err| internal_err(format::Geth::pool_error(err)))
+			.map_err(|err| internal_err(format!("submit transaction to pool failed: {:?}", err)))
 			.await
 	}
 }
