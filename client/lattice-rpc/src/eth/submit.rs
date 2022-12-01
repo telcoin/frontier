@@ -221,7 +221,7 @@ where
 			// Legacy transaction. Decode and wrap in envelope.
 			match rlp::decode::<ethereum::TransactionV0>(slice) {
 				Ok(transaction) => ethereum::TransactionV2::Legacy(transaction),
-				Err(_) => return Err(internal_err("decode transaction failed")),
+				Err(_) => return Err(internal_err("decode legacy transaction failed")),
 			}
 		} else {
 			// Typed Transaction.
@@ -233,7 +233,7 @@ where
 			// match rlp::decode::<ethereum::TransactionV2>(&extend[..]) {
 			match ethereum::TransactionV2::decode(&extend[..]) {
 				Ok(transaction) => transaction,
-				Err(_) => return Err(internal_err("decode transaction failed")),
+				Err(e) => return Err(internal_err("decode v2 transaction failed")),
 			}
 		};
 
