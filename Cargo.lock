@@ -1761,53 +1761,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "fc-rpc"
-version = "2.0.0-dev"
-dependencies = [
- "beefy-primitives",
- "ethereum",
- "ethereum-types",
- "evm",
- "fc-db",
- "fc-rpc-core",
- "fp-ethereum",
- "fp-evm",
- "fp-rpc",
- "fp-storage",
- "futures",
- "hex",
- "jsonrpsee",
- "libsecp256k1",
- "log",
- "lru 0.8.1",
- "parity-scale-codec",
- "prometheus",
- "rand 0.8.5",
- "rlp",
- "sc-block-builder",
- "sc-client-api",
- "sc-client-db",
- "sc-network",
- "sc-network-common",
- "sc-rpc",
- "sc-service",
- "sc-transaction-pool",
- "sc-transaction-pool-api",
- "sp-api",
- "sp-block-builder",
- "sp-blockchain",
- "sp-consensus",
- "sp-core",
- "sp-io",
- "sp-runtime",
- "sp-storage",
- "substrate-prometheus-endpoint",
- "substrate-test-runtime-client",
- "tempfile",
- "tokio",
-]
-
-[[package]]
 name = "fc-rpc-core"
 version = "1.1.0-dev"
 dependencies = [
@@ -2250,7 +2203,6 @@ dependencies = [
  "fc-consensus",
  "fc-db",
  "fc-mapping-sync",
- "fc-rpc",
  "fc-rpc-core",
  "fp-consensus",
  "fp-dynamic-fee",
@@ -2263,6 +2215,7 @@ dependencies = [
  "frontier-template-runtime",
  "futures",
  "jsonrpsee",
+ "lattice-fc-rpc",
  "log",
  "pallet-transaction-payment",
  "pallet-transaction-payment-rpc",
@@ -3192,6 +3145,53 @@ dependencies = [
  "regex",
  "rocksdb",
  "smallvec",
+]
+
+[[package]]
+name = "lattice-fc-rpc"
+version = "2.0.0-dev"
+dependencies = [
+ "beefy-primitives",
+ "ethereum",
+ "ethereum-types",
+ "evm",
+ "fc-db",
+ "fc-rpc-core",
+ "fp-ethereum",
+ "fp-evm",
+ "fp-rpc",
+ "fp-storage",
+ "futures",
+ "hex",
+ "jsonrpsee",
+ "libsecp256k1",
+ "log",
+ "lru 0.8.1",
+ "parity-scale-codec",
+ "prometheus",
+ "rand 0.8.5",
+ "rlp",
+ "sc-block-builder",
+ "sc-client-api",
+ "sc-client-db",
+ "sc-network",
+ "sc-network-common",
+ "sc-rpc",
+ "sc-service",
+ "sc-transaction-pool",
+ "sc-transaction-pool-api",
+ "sp-api",
+ "sp-block-builder",
+ "sp-blockchain",
+ "sp-consensus",
+ "sp-core",
+ "sp-io",
+ "sp-runtime",
+ "sp-storage",
+ "substrate-prometheus-endpoint",
+ "substrate-test-runtime-client",
+ "tempfile",
+ "tokio",
 ]
 
 [[package]]

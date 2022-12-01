@@ -20,7 +20,7 @@ use sp_block_builder::BlockBuilder;
 use sp_blockchain::{Error as BlockChainError, HeaderBackend, HeaderMetadata};
 use sp_runtime::traits::BlakeTwo256;
 // Frontier
-use fc_rpc::{
+use lattice_fc_rpc::{
 	EthBlockDataCacheTask, OverrideHandle, RuntimeApiStorageOverride, SchemaV1Override,
 	SchemaV2Override, SchemaV3Override, StorageOverride,
 };
@@ -119,7 +119,7 @@ where
 	P: TransactionPool<Block = Block> + 'static,
 	A: ChainApi<Block = Block> + 'static,
 {
-	use fc_rpc::{
+	use lattice_fc_rpc::{
 		Eth, EthApiServer, EthDevSigner, EthFilter, EthFilterApiServer, EthPubSub,
 		EthPubSubApiServer, EthSigner, Net, NetApiServer, Web3, Web3ApiServer,
 	};

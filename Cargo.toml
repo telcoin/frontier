@@ -16,7 +16,7 @@ members = [
 	"frame/evm/precompile/curve25519",
  	"client/consensus",
  	"client/rpc-core",
- 	"client/rpc",
+ 	"client/lattice-rpc",
  	"client/db",
  	"client/mapping-sync",
  	"primitives/consensus",

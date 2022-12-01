@@ -62,7 +62,7 @@ fc-cli = { path = "../../client/cli" }
 fc-consensus = { path = "../../client/consensus" }
 fc-db = { path = "../../client/db" }
 fc-mapping-sync = { path = "../../client/mapping-sync" }
-fc-rpc = { path = "../../client/rpc" }
+lattice-fc-rpc = { path = "../../client/lattice-rpc" }
 fc-rpc-core = { path = "../../client/rpc-core" }
 fp-consensus = { path = "../../primitives/consensus" }
 fp-dynamic-fee = { path = "../../primitives/dynamic-fee" }
@@ -87,7 +87,7 @@ manual-seal = [
 ]
 with-rocksdb-weights = ["frontier-template-runtime/with-rocksdb-weights"]
 with-paritydb-weights = ["frontier-template-runtime/with-paritydb-weights"]
-rpc_binary_search_estimate = ["fc-rpc/rpc_binary_search_estimate"]
+rpc_binary_search_estimate = ["lattice-fc-rpc/rpc_binary_search_estimate"]
 runtime-benchmarks = [
 	"frame-benchmarking",
 	"frame-benchmarking-cli",

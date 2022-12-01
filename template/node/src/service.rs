@@ -20,7 +20,7 @@ use sp_core::U256;
 use fc_consensus::FrontierBlockImport;
 use fc_db::Backend as FrontierBackend;
 use fc_mapping_sync::{MappingSyncWorker, SyncStrategy};
-use fc_rpc::{EthTask, OverrideHandle};
+use lattice_fc_rpc::{EthTask, OverrideHandle};
 use fc_rpc_core::types::{FeeHistoryCache, FeeHistoryCacheLimit, FilterPool};
 // Runtime
 use frontier_template_runtime::{opaque::Block, RuntimeApi};
@@ -266,7 +266,7 @@ pub fn new_full(mut config: Configuration, cli: &Cli) -> Result<TaskManager, Ser
 	use sp_consensus_aura::sr25519::AuthorityPair as AuraPair;
 
 	// Use ethereum style for subscription ids
-	config.rpc_id_provider = Some(Box::new(fc_rpc::EthereumSubIdProvider));
+	config.rpc_id_provider = Some(Box::new(lattice_fc_rpc::EthereumSubIdProvider));
 
 	let sc_service::PartialComponents {
 		client,
@@ -345,7 +345,7 @@ pub fn new_full(mut config: Configuration, cli: &Cli) -> Result<TaskManager, Ser
 	let enable_grandpa = !config.disable_grandpa;
 	let prometheus_registry = config.prometheus_registry().cloned();
 	let overrides = crate::rpc::overrides_handle(client.clone());
-	let block_data_cache = Arc::new(fc_rpc::EthBlockDataCacheTask::new(
+	let block_data_cache = Arc::new(lattice_fc_rpc::EthBlockDataCacheTask::new(
 		task_manager.spawn_handle(),
 		overrides.clone(),
 		50,
