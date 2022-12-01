@@ -59,7 +59,7 @@ where
 	fn query_storage<T: Decode>(&self, id: &BlockId<B>, key: &StorageKey) -> Option<T> {
 		let hash = match id {
 			BlockId::Hash(h) => h.to_owned(),
-			_ => todo!(),
+			BlockId::Number(_) => return None,
 		};
 		if let Ok(Some(data)) = self.client.storage(hash, key) {
 			if let Ok(result) = Decode::decode(&mut &data.0[..]) {

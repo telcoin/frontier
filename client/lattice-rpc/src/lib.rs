@@ -153,7 +153,7 @@ pub mod frontier_backend_client {
 	{
 		let hash = match at {
 			BlockId::Hash(h) => h,
-			_ => return EthereumStorageSchema::Undefined,
+			BlockId::Number(_) => return EthereumStorageSchema::Undefined,
 		};
 		match client.storage(hash, &StorageKey(PALLET_ETHEREUM_SCHEMA.to_vec())) {
 			Ok(Some(bytes)) => Decode::decode(&mut &bytes.0[..])
