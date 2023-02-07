@@ -98,6 +98,7 @@ pub mod pallet {
 	#[pallet::storage]
 	#[pallet::getter(fn base_fee_per_gas)]
 	pub type BaseFeePerGas<T> = StorageValue<_, U256, ValueQuery, DefaultBaseFeePerGas<T>>;
+	// pub type BaseFeePerGas<T> = StorageValue<_, HashMap<Category, U256>, ValueQuery, DefaultBaseFeePerGas<T>>;
 
 	#[pallet::type_value]
 	pub fn DefaultElasticity<T: Config>() -> Permill {
@@ -142,6 +143,7 @@ pub mod pallet {
 			// The base fee is fully increased (default 12.5%) if the block is upper full (default 100%).
 			// The base fee is fully decreased (default 12.5%) if the block is lower empty (default 0%).
 			let weight = <frame_system::Pallet<T>>::block_weight();
+			// let weight = <frame_system::Pallet<T>>::block_weight_by_category(category_by_block);
 			let max_weight = <<T as frame_system::Config>::BlockWeights>::get().max_block;
 
 			// We convert `weight` into block fullness and ensure we are within the lower and upper bound.

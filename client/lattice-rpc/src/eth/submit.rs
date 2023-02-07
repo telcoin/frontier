@@ -41,8 +41,6 @@ use crate::{
 	internal_err,
 };
 
-use ethereum::EnvelopedDecodable;
-
 impl<B, C, P, CT, BE, H: ExHashT, A: ChainApi> Eth<B, C, P, CT, BE, H, A>
 where
 	B: BlockT<Hash = H256> + Send + Sync + 'static,

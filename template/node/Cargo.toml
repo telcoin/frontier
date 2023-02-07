@@ -22,40 +22,40 @@ codec = { package = "parity-scale-codec", version = "3.2.1", features = ["derive
 jsonrpsee = { version = "0.15.1", features = ["server", "macros"] }
 
 # Substrate
-sc-basic-authorship = { version = "0.10.0-dev", git = "https://github.com/telcoin/substrate", branch = "lattice" }
-sc-cli = { version = "0.10.0-dev", git = "https://github.com/telcoin/substrate", branch = "lattice", features = ["wasmtime"] }
-sc-client-api = { version = "4.0.0-dev", git = "https://github.com/telcoin/substrate", branch = "lattice" }
-sc-consensus = { version = "0.10.0-dev", git = "https://github.com/telcoin/substrate", branch = "lattice" }
-sc-consensus-aura = { version = "0.10.0-dev", git = "https://github.com/telcoin/substrate", branch = "lattice", optional = true }
-sc-consensus-manual-seal = { version = "0.10.0-dev", git = "https://github.com/telcoin/substrate", branch = "lattice", optional = true }
-sc-executor = { version = "0.10.0-dev", git = "https://github.com/telcoin/substrate", branch = "lattice", features = ["wasmtime"] }
-sc-finality-grandpa = { version = "0.10.0-dev", git = "https://github.com/telcoin/substrate", branch = "lattice" }
-sc-keystore = { version = "4.0.0-dev", git = "https://github.com/telcoin/substrate", branch = "lattice" }
-sc-network = { version = "0.10.0-dev", git = "https://github.com/telcoin/substrate", branch = "lattice" }
-sc-rpc = { version = "4.0.0-dev", git = "https://github.com/telcoin/substrate", branch = "lattice" }
-sc-rpc-api = { version = "0.10.0-dev", git = "https://github.com/telcoin/substrate", branch = "lattice" }
-sc-service = { version = "0.10.0-dev", git = "https://github.com/telcoin/substrate", branch = "lattice", features = ["wasmtime"] }
-sc-telemetry = { version = "4.0.0-dev", git = "https://github.com/telcoin/substrate", branch = "lattice" }
-sc-transaction-pool = { version = "4.0.0-dev", git = "https://github.com/telcoin/substrate", branch = "lattice" }
-sc-transaction-pool-api = { version = "4.0.0-dev", git = "https://github.com/telcoin/substrate", branch = "lattice" }
-sp-api = { version = "4.0.0-dev", git = "https://github.com/telcoin/substrate", branch = "lattice" }
-sp-block-builder = { version = "4.0.0-dev", git = "https://github.com/telcoin/substrate", branch = "lattice" }
-sp-blockchain = { version = "4.0.0-dev", git = "https://github.com/telcoin/substrate", branch = "lattice" }
-sp-consensus-aura = { version = "0.10.0-dev", git = "https://github.com/telcoin/substrate", branch = "lattice" }
-sp-core = { version = "6.0.0", git = "https://github.com/telcoin/substrate", branch = "lattice" }
-sp-finality-grandpa = { version = "4.0.0-dev", git = "https://github.com/telcoin/substrate", branch = "lattice" }
-sp-inherents = { version = "4.0.0-dev", git = "https://github.com/telcoin/substrate", branch = "lattice" }
-sp-keyring = { version = "6.0.0", git = "https://github.com/telcoin/substrate", branch = "lattice" }
-sp-runtime = { version = "6.0.0", git = "https://github.com/telcoin/substrate", branch = "lattice" }
-sp-timestamp = { version = "4.0.0-dev", git = "https://github.com/telcoin/substrate", branch = "lattice" }
+sc-basic-authorship = { version = "0.10.0-dev", git = "https://github.com/telcoin/substrate", branch = "lattice-custom-block-grant" }
+sc-cli = { version = "0.10.0-dev", git = "https://github.com/telcoin/substrate", branch = "lattice-custom-block-grant", features = ["wasmtime"] }
+sc-client-api = { version = "4.0.0-dev", git = "https://github.com/telcoin/substrate", branch = "lattice-custom-block-grant" }
+sc-consensus = { version = "0.10.0-dev", git = "https://github.com/telcoin/substrate", branch = "lattice-custom-block-grant" }
+sc-consensus-aura = { version = "0.10.0-dev", git = "https://github.com/telcoin/substrate", branch = "lattice-custom-block-grant", optional = true }
+sc-consensus-manual-seal = { version = "0.10.0-dev", git = "https://github.com/telcoin/substrate", branch = "lattice-custom-block-grant", optional = true }
+sc-executor = { version = "0.10.0-dev", git = "https://github.com/telcoin/substrate", branch = "lattice-custom-block-grant", features = ["wasmtime"] }
+sc-finality-grandpa = { version = "0.10.0-dev", git = "https://github.com/telcoin/substrate", branch = "lattice-custom-block-grant" }
+sc-keystore = { version = "4.0.0-dev", git = "https://github.com/telcoin/substrate", branch = "lattice-custom-block-grant" }
+sc-network = { version = "0.10.0-dev", git = "https://github.com/telcoin/substrate", branch = "lattice-custom-block-grant" }
+sc-rpc = { version = "4.0.0-dev", git = "https://github.com/telcoin/substrate", branch = "lattice-custom-block-grant" }
+sc-rpc-api = { version = "0.10.0-dev", git = "https://github.com/telcoin/substrate", branch = "lattice-custom-block-grant" }
+sc-service = { version = "0.10.0-dev", git = "https://github.com/telcoin/substrate", branch = "lattice-custom-block-grant", features = ["wasmtime"] }
+sc-telemetry = { version = "4.0.0-dev", git = "https://github.com/telcoin/substrate", branch = "lattice-custom-block-grant" }
+sc-transaction-pool = { version = "4.0.0-dev", git = "https://github.com/telcoin/substrate", branch = "lattice-custom-block-grant" }
+sc-transaction-pool-api = { version = "4.0.0-dev", git = "https://github.com/telcoin/substrate", branch = "lattice-custom-block-grant" }
+sp-api = { version = "4.0.0-dev", git = "https://github.com/telcoin/substrate", branch = "lattice-custom-block-grant" }
+sp-block-builder = { version = "4.0.0-dev", git = "https://github.com/telcoin/substrate", branch = "lattice-custom-block-grant" }
+sp-blockchain = { version = "4.0.0-dev", git = "https://github.com/telcoin/substrate", branch = "lattice-custom-block-grant" }
+sp-consensus-aura = { version = "0.10.0-dev", git = "https://github.com/telcoin/substrate", branch = "lattice-custom-block-grant" }
+sp-core = { version = "6.0.0", git = "https://github.com/telcoin/substrate", branch = "lattice-custom-block-grant" }
+sp-finality-grandpa = { version = "4.0.0-dev", git = "https://github.com/telcoin/substrate", branch = "lattice-custom-block-grant" }
+sp-inherents = { version = "4.0.0-dev", git = "https://github.com/telcoin/substrate", branch = "lattice-custom-block-grant" }
+sp-keyring = { version = "6.0.0", git = "https://github.com/telcoin/substrate", branch = "lattice-custom-block-grant" }
+sp-runtime = { version = "6.0.0", git = "https://github.com/telcoin/substrate", branch = "lattice-custom-block-grant" }
+sp-timestamp = { version = "4.0.0-dev", git = "https://github.com/telcoin/substrate", branch = "lattice-custom-block-grant" }
 # These dependencies are used for RPC
-pallet-transaction-payment-rpc = { version = "4.0.0-dev", git = "https://github.com/telcoin/substrate", branch = "lattice" }
-substrate-frame-rpc-system = { version = "4.0.0-dev", git = "https://github.com/telcoin/substrate", branch = "lattice" }
+pallet-transaction-payment-rpc = { version = "4.0.0-dev", git = "https://github.com/telcoin/substrate", branch = "lattice-custom-block-grant" }
+substrate-frame-rpc-system = { version = "4.0.0-dev", git = "https://github.com/telcoin/substrate", branch = "lattice-custom-block-grant" }
 # These dependencies are used for runtime benchmarking
-frame-benchmarking = { version = "4.0.0-dev", git = "https://github.com/telcoin/substrate", branch = "lattice", optional = true }
-frame-benchmarking-cli = { version = "4.0.0-dev", git = "https://github.com/telcoin/substrate", branch = "lattice", optional = true }
-frame-system = { version = "4.0.0-dev", git = "https://github.com/telcoin/substrate", branch = "lattice" }
-pallet-transaction-payment = { version = "4.0.0-dev", git = "https://github.com/telcoin/substrate", branch = "lattice" }
+frame-benchmarking = { version = "4.0.0-dev", git = "https://github.com/telcoin/substrate", branch = "lattice-custom-block-grant", optional = true }
+frame-benchmarking-cli = { version = "4.0.0-dev", git = "https://github.com/telcoin/substrate", branch = "lattice-custom-block-grant", optional = true }
+frame-system = { version = "4.0.0-dev", git = "https://github.com/telcoin/substrate", branch = "lattice-custom-block-grant" }
+pallet-transaction-payment = { version = "4.0.0-dev", git = "https://github.com/telcoin/substrate", branch = "lattice-custom-block-grant" }
 
 # Frontier
 fc-cli = { path = "../../client/cli" }
@@ -73,7 +73,7 @@ fp-storage = { path = "../../primitives/storage" }
 frontier-template-runtime = { path = "../runtime", default-features = false, features = ["std"] }
 
 [build-dependencies]
-substrate-build-script-utils = { version = "3.0.0", git = "https://github.com/telcoin/substrate", branch = "lattice" }
+substrate-build-script-utils = { version = "3.0.0", git = "https://github.com/telcoin/substrate", branch = "lattice-custom-block-grant" }
 
 [features]
 default = ["aura", "with-rocksdb-weights"]

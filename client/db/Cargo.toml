@@ -20,11 +20,11 @@ kvdb-rocksdb = { version = "0.16.0", optional = true }
 parity-db = { version = "0.3.16", optional = true }
 
 # Substrate
-sc-client-db = { version = "0.10.0-dev", git = "https://github.com/telcoin/substrate", branch = "lattice", features = ["rocksdb"] }
-sp-blockchain = { version = "4.0.0-dev", git = "https://github.com/telcoin/substrate", branch = "lattice" }
-sp-core = { version = "6.0.0", git = "https://github.com/telcoin/substrate", branch = "lattice" }
-sp-database = { version = "4.0.0-dev", git = "https://github.com/telcoin/substrate", branch = "lattice" }
-sp-runtime = { version = "6.0.0", git = "https://github.com/telcoin/substrate", branch = "lattice" }
+sc-client-db = { version = "0.10.0-dev", git = "https://github.com/telcoin/substrate", branch = "lattice-custom-block-grant", features = ["rocksdb"] }
+sp-blockchain = { version = "4.0.0-dev", git = "https://github.com/telcoin/substrate", branch = "lattice-custom-block-grant" }
+sp-core = { version = "6.0.0", git = "https://github.com/telcoin/substrate", branch = "lattice-custom-block-grant" }
+sp-database = { version = "4.0.0-dev", git = "https://github.com/telcoin/substrate", branch = "lattice-custom-block-grant" }
+sp-runtime = { version = "6.0.0", git = "https://github.com/telcoin/substrate", branch = "lattice-custom-block-grant" }
 
 # Frontier
 fp-storage = { version = "2.0.0-dev", path = "../../primitives/storage" }
@@ -34,8 +34,8 @@ default = ["kvdb-rocksdb", "parity-db"]
 
 [dev-dependencies]
 futures = "0.3.24"
-sc-block-builder = { version = "0.10.0-dev", git = "https://github.com/telcoin/substrate", branch = "lattice" }
-sc-client-db = { version = "0.10.0-dev", git = "https://github.com/telcoin/substrate", branch = "lattice", features = ["rocksdb"] }
-sp-consensus = { version = "0.10.0-dev", git = "https://github.com/telcoin/substrate", branch = "lattice" }
-substrate-test-runtime-client = { version = "2.0.0", git = "https://github.com/telcoin/substrate", branch = "lattice" }
+sc-block-builder = { version = "0.10.0-dev", git = "https://github.com/telcoin/substrate", branch = "lattice-custom-block-grant" }
+sc-client-db = { version = "0.10.0-dev", git = "https://github.com/telcoin/substrate", branch = "lattice-custom-block-grant", features = ["rocksdb"] }
+sp-consensus = { version = "0.10.0-dev", git = "https://github.com/telcoin/substrate", branch = "lattice-custom-block-grant" }
+substrate-test-runtime-client = { version = "2.0.0", git = "https://github.com/telcoin/substrate", branch = "lattice-custom-block-grant" }
 tempfile = "3.3.0"

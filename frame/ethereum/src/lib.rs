@@ -213,6 +213,7 @@ pub mod pallet {
 			Pending::<T>::kill();
 		}
 
+		// pass in category here?
 		fn on_initialize(_: T::BlockNumber) -> Weight {
 			let mut weight = T::SystemWeightInfo::kill_storage(1);
 
@@ -308,9 +309,17 @@ pub mod pallet {
 		StorageValue<_, Vec<(Transaction, TransactionStatus, Receipt)>, ValueQuery>;
 
 	/// The current Ethereum block.
+	/// 
+	/// struct ExtendedEthBlock{
+	///     category: LatticeCategory,
+	///     value: ethereum::BlockV2,
+	/// }
+	/// pass this struct on finalize
 	#[pallet::storage]
 	#[pallet::getter(fn current_block)]
 	pub(super) type CurrentBlock<T: Config> = StorageValue<_, ethereum::BlockV2>;
+	// pub(super) type CurrentBlock<T: Config> = StorageValue<_, ExtendedEthBlock>;
+	// hash map in base fee pallet to find fee structure for block's category
 
 	/// The current Ethereum receipts.
 	#[pallet::storage]
@@ -453,6 +462,7 @@ impl<T: Config> Pallet<T> {
 		let transaction_data: TransactionData = transaction.into();
 		let transaction_nonce = transaction_data.nonce;
 
+		// this needs to be changed
 		let (base_fee, _) = T::FeeCalculator::min_gas_price();
 		let (who, _) = pallet_evm::Pallet::<T>::account_basic(&origin);
 

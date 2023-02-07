@@ -88,6 +88,7 @@ pub mod pallet {
 	#[cfg_attr(feature = "std", derive(Default))]
 	pub struct GenesisConfig {
 		pub min_gas_price: U256,
+		// pub min_gas_price: std::collections::BTreeMap<u32, U256>,
 	}
 
 	#[pallet::genesis_build]
@@ -100,6 +101,7 @@ pub mod pallet {
 	#[pallet::storage]
 	#[pallet::getter(fn min_gas_price)]
 	pub(super) type MinGasPrice<T: Config> = StorageValue<_, U256, ValueQuery>;
+	// pub(super) type MinGasPrice<T: Config> = StorageMap<_, U256, ValueQuery>;
 
 	#[pallet::storage]
 	pub(super) type TargetMinGasPrice<T: Config> = StorageValue<_, U256>;
@@ -121,6 +123,20 @@ pub mod pallet {
 
 		fn create_inherent(data: &InherentData) -> Option<Self::Call> {
 			let target = data.get_data::<InherentType>(&INHERENT_IDENTIFIER).ok()??;
+
+			/*
+				let category = data.get_data::<InherentType>(&b"latticeblock").ok()??;
+
+				option 1:
+				match category {
+					0 => CATEGORY0_BASE_FEE,
+					1 => CATEGORY1_BASE_FEE,
+					_ => DEFAULT_BASE_FEE,
+				}
+
+				option 2:
+				let target = MinGasPrice::<T>::get(category)
+			*/
 
 			Some(Call::note_min_gas_price_target { target })
 		}

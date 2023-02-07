@@ -16,10 +16,10 @@ futures-timer = "3.0.1"
 log = "0.4.17"
 
 # Substrate
-sc-client-api = { version = "4.0.0-dev", git = "https://github.com/telcoin/substrate", branch = "lattice" }
-sp-api = { version = "4.0.0-dev", git = "https://github.com/telcoin/substrate", branch = "lattice" }
-sp-blockchain = { version = "4.0.0-dev", git = "https://github.com/telcoin/substrate", branch = "lattice" }
-sp-runtime = { version = "6.0.0", git = "https://github.com/telcoin/substrate", branch = "lattice" }
+sc-client-api = { version = "4.0.0-dev", git = "https://github.com/telcoin/substrate", branch = "lattice-custom-block-grant" }
+sp-api = { version = "4.0.0-dev", git = "https://github.com/telcoin/substrate", branch = "lattice-custom-block-grant" }
+sp-blockchain = { version = "4.0.0-dev", git = "https://github.com/telcoin/substrate", branch = "lattice-custom-block-grant" }
+sp-runtime = { version = "6.0.0", git = "https://github.com/telcoin/substrate", branch = "lattice-custom-block-grant" }
 
 # Frontier
 fc-db = { version = "2.0.0-dev", path = "../db" }
