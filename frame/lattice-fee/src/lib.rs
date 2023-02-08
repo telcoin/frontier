@@ -125,6 +125,20 @@ pub mod pallet {
 			// 	- One storage read to get the Elasticity.
 			// 	- One write to BaseFeePerGas.
 			let db_weight = <T as frame_system::Config>::DbWeight::get();
+			let category = frame_system::Pallet::<T>::digest().logs().iter()
+				.filter_map(|s| s.as_pre_runtime())
+				.find_map(|(id, mut data)| {
+					match id == sp_lattice::LATTICE_ENGINE_ID {
+						true => sp_lattice::Category::decode(&mut data).ok(),
+						false => None,
+					}
+				}).unwrap_or_default();
+
+			
+			
+			log::info!("\n\n\n\n\n\n\n\n\n\n\n\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+			log::info!("\ncategory in on_initialize: {category:?}");
+			log::info!("\n\n\n\n\n\n\n\n\n\n\n\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
 			db_weight.reads_writes(2, 1)
 		}
 
@@ -133,6 +147,23 @@ pub mod pallet {
 				// Zero elasticity means constant BaseFeePerGas.
 				return;
 			}
+
+			let digests = &frame_system::Pallet::<T>::digest().logs();
+			let category = frame_system::Pallet::<T>::digest().logs().iter()
+				.filter_map(|s| s.as_pre_runtime())
+				.find_map(|(id, mut data)| {
+					match id == sp_lattice::LATTICE_ENGINE_ID {
+						true => sp_lattice::Category::decode(&mut data).ok(),
+						false => None,
+					}
+				}).unwrap_or_default();
+
+			
+			
+			log::info!("\n\n\n\n\n\n\n\n\n\n\n\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+			log::info!("\ncategory in on_finalize: {category:?}");
+			log::info!("\n\n\n\n\n\n\n\n\n\n\n\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+
 
 			let lower = T::Threshold::lower();
 			let upper = T::Threshold::upper();

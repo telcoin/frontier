@@ -427,7 +427,7 @@ dependencies = [
 [[package]]
 name = "beefy-merkle-tree"
 version = "4.0.0-dev"
-source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#3c44b6a31dd678d9aa3cef453eb8cacd2333af2e"
+source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#595bc08b33c17316581f7ae8be5879349ab44e1e"
 dependencies = [
  "beefy-primitives",
  "sp-api",
@@ -437,7 +437,7 @@ dependencies = [
 [[package]]
 name = "beefy-primitives"
 version = "4.0.0-dev"
-source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#3c44b6a31dd678d9aa3cef453eb8cacd2333af2e"
+source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#595bc08b33c17316581f7ae8be5879349ab44e1e"
 dependencies = [
  "parity-scale-codec",
  "scale-info",
@@ -1811,14 +1811,14 @@ dependencies = [
 
 [[package]]
 name = "filetime"
-version = "0.2.19"
+version = "0.2.20"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "4e884668cd0c7480504233e951174ddc3b382f7c2666e3b7310b5c4e7b0c37f9"
+checksum = "8a3de6e8d11b22ff9edc6d916f890800597d60f8b2da1caf2955c274638d6412"
 dependencies = [
  "cfg-if",
  "libc",
  "redox_syscall",
- "windows-sys 0.42.0",
+ "windows-sys 0.45.0",
 ]
 
 [[package]]
@@ -1885,7 +1885,7 @@ dependencies = [
  "futures-sink",
  "nanorand",
  "pin-project",
- "spin 0.9.4",
+ "spin 0.9.5",
 ]
 
 [[package]]
@@ -1897,7 +1897,7 @@ checksum = "3f9eec918d3f24069decb9af1554cad7c880e2da24a9afd88aca000531ab82c1"
 [[package]]
 name = "fork-tree"
 version = "3.0.0"
-source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#3c44b6a31dd678d9aa3cef453eb8cacd2333af2e"
+source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#595bc08b33c17316581f7ae8be5879349ab44e1e"
 dependencies = [
  "parity-scale-codec",
 ]
@@ -2003,7 +2003,7 @@ checksum = "6c2141d6d6c8512188a7891b4b01590a45f6dac67afb4f255c4124dbb86d4eaa"
 [[package]]
 name = "frame-benchmarking"
 version = "4.0.0-dev"
-source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#3c44b6a31dd678d9aa3cef453eb8cacd2333af2e"
+source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#595bc08b33c17316581f7ae8be5879349ab44e1e"
 dependencies = [
  "frame-support",
  "frame-system",
@@ -2026,7 +2026,7 @@ dependencies = [
 [[package]]
 name = "frame-benchmarking-cli"
 version = "4.0.0-dev"
-source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#3c44b6a31dd678d9aa3cef453eb8cacd2333af2e"
+source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#595bc08b33c17316581f7ae8be5879349ab44e1e"
 dependencies = [
  "Inflector",
  "array-bytes",
@@ -2078,7 +2078,7 @@ dependencies = [
 [[package]]
 name = "frame-executive"
 version = "4.0.0-dev"
-source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#3c44b6a31dd678d9aa3cef453eb8cacd2333af2e"
+source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#595bc08b33c17316581f7ae8be5879349ab44e1e"
 dependencies = [
  "frame-support",
  "frame-system",
@@ -2106,7 +2106,7 @@ dependencies = [
 [[package]]
 name = "frame-support"
 version = "4.0.0-dev"
-source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#3c44b6a31dd678d9aa3cef453eb8cacd2333af2e"
+source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#595bc08b33c17316581f7ae8be5879349ab44e1e"
 dependencies = [
  "bitflags",
  "frame-metadata",
@@ -2138,7 +2138,7 @@ dependencies = [
 [[package]]
 name = "frame-support-procedural"
 version = "4.0.0-dev"
-source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#3c44b6a31dd678d9aa3cef453eb8cacd2333af2e"
+source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#595bc08b33c17316581f7ae8be5879349ab44e1e"
 dependencies = [
  "Inflector",
  "cfg-expr",
@@ -2152,7 +2152,7 @@ dependencies = [
 [[package]]
 name = "frame-support-procedural-tools"
 version = "4.0.0-dev"
-source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#3c44b6a31dd678d9aa3cef453eb8cacd2333af2e"
+source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#595bc08b33c17316581f7ae8be5879349ab44e1e"
 dependencies = [
  "frame-support-procedural-tools-derive",
  "proc-macro-crate",
@@ -2164,7 +2164,7 @@ dependencies = [
 [[package]]
 name = "frame-support-procedural-tools-derive"
 version = "3.0.0"
-source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#3c44b6a31dd678d9aa3cef453eb8cacd2333af2e"
+source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#595bc08b33c17316581f7ae8be5879349ab44e1e"
 dependencies = [
  "proc-macro2",
  "quote",
@@ -2174,7 +2174,7 @@ dependencies = [
 [[package]]
 name = "frame-system"
 version = "4.0.0-dev"
-source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#3c44b6a31dd678d9aa3cef453eb8cacd2333af2e"
+source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#595bc08b33c17316581f7ae8be5879349ab44e1e"
 dependencies = [
  "frame-support",
  "log",
@@ -2192,7 +2192,7 @@ dependencies = [
 [[package]]
 name = "frame-system-benchmarking"
 version = "4.0.0-dev"
-source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#3c44b6a31dd678d9aa3cef453eb8cacd2333af2e"
+source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#595bc08b33c17316581f7ae8be5879349ab44e1e"
 dependencies = [
  "frame-benchmarking",
  "frame-support",
@@ -2207,7 +2207,7 @@ dependencies = [
 [[package]]
 name = "frame-system-rpc-runtime-api"
 version = "4.0.0-dev"
-source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#3c44b6a31dd678d9aa3cef453eb8cacd2333af2e"
+source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#595bc08b33c17316581f7ae8be5879349ab44e1e"
 dependencies = [
  "parity-scale-codec",
  "sp-api",
@@ -2670,9 +2670,9 @@ dependencies = [
 
 [[package]]
 name = "hermit-abi"
-version = "0.3.0"
+version = "0.3.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "856b5cb0902c2b6d65d5fd97dfa30f9b70c7538e770b98eab5ed52d8db923e01"
+checksum = "fed44880c466736ef9a5c5b5facefb5ed0785676d0c02d612db14e54f0d84286"
 
 [[package]]
 name = "hex"
@@ -2996,7 +2996,7 @@ version = "0.4.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "22e18b0a45d56fe973d6db23972bf5bc46f988a4a2385deac9cc29572f09daef"
 dependencies = [
- "hermit-abi 0.3.0",
+ "hermit-abi 0.3.1",
  "io-lifetimes 1.0.5",
  "rustix 0.36.8",
  "windows-sys 0.45.0",
@@ -4404,7 +4404,7 @@ checksum = "9b7820b9daea5457c9f21c69448905d723fbd21136ccf521748f23fd49e723ee"
 [[package]]
 name = "pallet-aura"
 version = "4.0.0-dev"
-source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#3c44b6a31dd678d9aa3cef453eb8cacd2333af2e"
+source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#595bc08b33c17316581f7ae8be5879349ab44e1e"
 dependencies = [
  "frame-support",
  "frame-system",
@@ -4420,7 +4420,7 @@ dependencies = [
 [[package]]
 name = "pallet-authorship"
 version = "4.0.0-dev"
-source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#3c44b6a31dd678d9aa3cef453eb8cacd2333af2e"
+source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#595bc08b33c17316581f7ae8be5879349ab44e1e"
 dependencies = [
  "frame-support",
  "frame-system",
@@ -4435,7 +4435,7 @@ dependencies = [
 [[package]]
 name = "pallet-babe"
 version = "4.0.0-dev"
-source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#3c44b6a31dd678d9aa3cef453eb8cacd2333af2e"
+source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#595bc08b33c17316581f7ae8be5879349ab44e1e"
 dependencies = [
  "frame-benchmarking",
  "frame-support",
@@ -4459,7 +4459,7 @@ dependencies = [
 [[package]]
 name = "pallet-balances"
 version = "4.0.0-dev"
-source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#3c44b6a31dd678d9aa3cef453eb8cacd2333af2e"
+source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#595bc08b33c17316581f7ae8be5879349ab44e1e"
 dependencies = [
  "frame-benchmarking",
  "frame-support",
@@ -4668,7 +4668,7 @@ dependencies = [
 [[package]]
 name = "pallet-grandpa"
 version = "4.0.0-dev"
-source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#3c44b6a31dd678d9aa3cef453eb8cacd2333af2e"
+source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#595bc08b33c17316581f7ae8be5879349ab44e1e"
 dependencies = [
  "frame-benchmarking",
  "frame-support",
@@ -4711,18 +4711,20 @@ dependencies = [
  "fp-evm",
  "frame-support",
  "frame-system",
+ "log",
  "parity-scale-codec",
  "scale-info",
  "serde",
  "sp-core",
  "sp-io",
+ "sp-lattice",
  "sp-runtime",
 ]
 
 [[package]]
 name = "pallet-session"
 version = "4.0.0-dev"
-source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#3c44b6a31dd678d9aa3cef453eb8cacd2333af2e"
+source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#595bc08b33c17316581f7ae8be5879349ab44e1e"
 dependencies = [
  "frame-support",
  "frame-system",
@@ -4743,7 +4745,7 @@ dependencies = [
 [[package]]
 name = "pallet-sudo"
 version = "4.0.0-dev"
-source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#3c44b6a31dd678d9aa3cef453eb8cacd2333af2e"
+source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#595bc08b33c17316581f7ae8be5879349ab44e1e"
 dependencies = [
  "frame-support",
  "frame-system",
@@ -4757,7 +4759,7 @@ dependencies = [
 [[package]]
 name = "pallet-timestamp"
 version = "4.0.0-dev"
-source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#3c44b6a31dd678d9aa3cef453eb8cacd2333af2e"
+source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#595bc08b33c17316581f7ae8be5879349ab44e1e"
 dependencies = [
  "frame-benchmarking",
  "frame-support",
@@ -4775,7 +4777,7 @@ dependencies = [
 [[package]]
 name = "pallet-transaction-payment"
 version = "4.0.0-dev"
-source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#3c44b6a31dd678d9aa3cef453eb8cacd2333af2e"
+source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#595bc08b33c17316581f7ae8be5879349ab44e1e"
 dependencies = [
  "frame-support",
  "frame-system",
@@ -4791,7 +4793,7 @@ dependencies = [
 [[package]]
 name = "pallet-transaction-payment-rpc"
 version = "4.0.0-dev"
-source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#3c44b6a31dd678d9aa3cef453eb8cacd2333af2e"
+source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#595bc08b33c17316581f7ae8be5879349ab44e1e"
 dependencies = [
  "jsonrpsee",
  "pallet-transaction-payment-rpc-runtime-api",
@@ -4807,7 +4809,7 @@ dependencies = [
 [[package]]
 name = "pallet-transaction-payment-rpc-runtime-api"
 version = "4.0.0-dev"
-source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#3c44b6a31dd678d9aa3cef453eb8cacd2333af2e"
+source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#595bc08b33c17316581f7ae8be5879349ab44e1e"
 dependencies = [
  "pallet-transaction-payment",
  "parity-scale-codec",
@@ -4819,7 +4821,7 @@ dependencies = [
 [[package]]
 name = "pallet-utility"
 version = "4.0.0-dev"
-source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#3c44b6a31dd678d9aa3cef453eb8cacd2333af2e"
+source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#595bc08b33c17316581f7ae8be5879349ab44e1e"
 dependencies = [
  "frame-benchmarking",
  "frame-support",
@@ -5011,9 +5013,9 @@ checksum = "478c572c3d73181ff3c2539045f6eb99e5491218eae919370993b890cdbdd98e"
 
 [[package]]
 name = "pest"
-version = "2.5.4"
+version = "2.5.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "4ab62d2fa33726dbe6321cc97ef96d8cde531e3eeaf858a058de53a8a6d40d8f"
+checksum = "028accff104c4e513bad663bbcd2ad7cfd5304144404c31ed0a77ac103d00660"
 dependencies = [
  "thiserror",
  "ucd-trie",
@@ -5021,9 +5023,9 @@ dependencies = [
 
 [[package]]
 name = "pest_derive"
-version = "2.5.4"
+version = "2.5.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "8bf026e2d0581559db66d837fe5242320f525d85c76283c61f4d51a1238d65ea"
+checksum = "2ac3922aac69a40733080f53c1ce7f91dcf57e1a5f6c52f421fadec7fbdc4b69"
 dependencies = [
  "pest",
  "pest_generator",
@@ -5031,9 +5033,9 @@ dependencies = [
 
 [[package]]
 name = "pest_generator"
-version = "2.5.4"
+version = "2.5.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "2b27bd18aa01d91c8ed2b61ea23406a676b42d82609c6e2581fba42f0c15f17f"
+checksum = "d06646e185566b5961b4058dd107e0a7f56e77c3f484549fb119867773c0f202"
 dependencies = [
  "pest",
  "pest_meta",
@@ -5044,9 +5046,9 @@ dependencies = [
 
 [[package]]
 name = "pest_meta"
-version = "2.5.4"
+version = "2.5.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "9f02b677c1859756359fc9983c2e56a0237f18624a3789528804406b7e915e5d"
+checksum = "e6f60b2ba541577e2a0c307c8f39d1439108120eb7903adeb6497fa880c59616"
 dependencies = [
  "once_cell",
  "pest",
@@ -5055,9 +5057,9 @@ dependencies = [
 
 [[package]]
 name = "petgraph"
-version = "0.6.2"
+version = "0.6.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "e6d5014253a1331579ce62aa67443b4a658c5e7dd03d4bc6d302b94474888143"
+checksum = "4dd7d28ee937e54fe3080c91faa1c3a46c06de6252988a7f4592ba2310ef22a4"
 dependencies = [
  "fixedbitset",
  "indexmap",
@@ -5860,7 +5862,7 @@ dependencies = [
 [[package]]
 name = "sc-allocator"
 version = "4.1.0-dev"
-source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#3c44b6a31dd678d9aa3cef453eb8cacd2333af2e"
+source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#595bc08b33c17316581f7ae8be5879349ab44e1e"
 dependencies = [
  "log",
  "sp-core",
@@ -5871,7 +5873,7 @@ dependencies = [
 [[package]]
 name = "sc-basic-authorship"
 version = "0.10.0-dev"
-source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#3c44b6a31dd678d9aa3cef453eb8cacd2333af2e"
+source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#595bc08b33c17316581f7ae8be5879349ab44e1e"
 dependencies = [
  "futures",
  "futures-timer",
@@ -5894,7 +5896,7 @@ dependencies = [
 [[package]]
 name = "sc-block-builder"
 version = "0.10.0-dev"
-source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#3c44b6a31dd678d9aa3cef453eb8cacd2333af2e"
+source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#595bc08b33c17316581f7ae8be5879349ab44e1e"
 dependencies = [
  "parity-scale-codec",
  "sc-client-api",
@@ -5910,7 +5912,7 @@ dependencies = [
 [[package]]
 name = "sc-chain-spec"
 version = "4.0.0-dev"
-source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#3c44b6a31dd678d9aa3cef453eb8cacd2333af2e"
+source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#595bc08b33c17316581f7ae8be5879349ab44e1e"
 dependencies = [
  "impl-trait-for-tuples",
  "memmap2",
@@ -5927,7 +5929,7 @@ dependencies = [
 [[package]]
 name = "sc-chain-spec-derive"
 version = "4.0.0-dev"
-source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#3c44b6a31dd678d9aa3cef453eb8cacd2333af2e"
+source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#595bc08b33c17316581f7ae8be5879349ab44e1e"
 dependencies = [
  "proc-macro-crate",
  "proc-macro2",
@@ -5938,7 +5940,7 @@ dependencies = [
 [[package]]
 name = "sc-cli"
 version = "0.10.0-dev"
-source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#3c44b6a31dd678d9aa3cef453eb8cacd2333af2e"
+source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#595bc08b33c17316581f7ae8be5879349ab44e1e"
 dependencies = [
  "array-bytes",
  "chrono",
@@ -5978,7 +5980,7 @@ dependencies = [
 [[package]]
 name = "sc-client-api"
 version = "4.0.0-dev"
-source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#3c44b6a31dd678d9aa3cef453eb8cacd2333af2e"
+source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#595bc08b33c17316581f7ae8be5879349ab44e1e"
 dependencies = [
  "fnv",
  "futures",
@@ -6006,7 +6008,7 @@ dependencies = [
 [[package]]
 name = "sc-client-db"
 version = "0.10.0-dev"
-source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#3c44b6a31dd678d9aa3cef453eb8cacd2333af2e"
+source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#595bc08b33c17316581f7ae8be5879349ab44e1e"
 dependencies = [
  "hash-db",
  "kvdb",
@@ -6031,7 +6033,7 @@ dependencies = [
 [[package]]
 name = "sc-consensus"
 version = "0.10.0-dev"
-source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#3c44b6a31dd678d9aa3cef453eb8cacd2333af2e"
+source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#595bc08b33c17316581f7ae8be5879349ab44e1e"
 dependencies = [
  "async-trait",
  "futures",
@@ -6055,7 +6057,7 @@ dependencies = [
 [[package]]
 name = "sc-consensus-aura"
 version = "0.10.0-dev"
-source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#3c44b6a31dd678d9aa3cef453eb8cacd2333af2e"
+source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#595bc08b33c17316581f7ae8be5879349ab44e1e"
 dependencies = [
  "async-trait",
  "futures",
@@ -6084,7 +6086,7 @@ dependencies = [
 [[package]]
 name = "sc-consensus-babe"
 version = "0.10.0-dev"
-source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#3c44b6a31dd678d9aa3cef453eb8cacd2333af2e"
+source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#595bc08b33c17316581f7ae8be5879349ab44e1e"
 dependencies = [
  "async-trait",
  "fork-tree",
@@ -6126,7 +6128,7 @@ dependencies = [
 [[package]]
 name = "sc-consensus-epochs"
 version = "0.10.0-dev"
-source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#3c44b6a31dd678d9aa3cef453eb8cacd2333af2e"
+source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#595bc08b33c17316581f7ae8be5879349ab44e1e"
 dependencies = [
  "fork-tree",
  "parity-scale-codec",
@@ -6139,7 +6141,7 @@ dependencies = [
 [[package]]
 name = "sc-consensus-manual-seal"
 version = "0.10.0-dev"
-source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#3c44b6a31dd678d9aa3cef453eb8cacd2333af2e"
+source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#595bc08b33c17316581f7ae8be5879349ab44e1e"
 dependencies = [
  "assert_matches",
  "async-trait",
@@ -6174,7 +6176,7 @@ dependencies = [
 [[package]]
 name = "sc-consensus-slots"
 version = "0.10.0-dev"
-source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#3c44b6a31dd678d9aa3cef453eb8cacd2333af2e"
+source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#595bc08b33c17316581f7ae8be5879349ab44e1e"
 dependencies = [
  "async-trait",
  "futures",
@@ -6198,7 +6200,7 @@ dependencies = [
 [[package]]
 name = "sc-executor"
 version = "0.10.0-dev"
-source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#3c44b6a31dd678d9aa3cef453eb8cacd2333af2e"
+source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#595bc08b33c17316581f7ae8be5879349ab44e1e"
 dependencies = [
  "lazy_static",
  "lru 0.7.8",
@@ -6225,7 +6227,7 @@ dependencies = [
 [[package]]
 name = "sc-executor-common"
 version = "0.10.0-dev"
-source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#3c44b6a31dd678d9aa3cef453eb8cacd2333af2e"
+source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#595bc08b33c17316581f7ae8be5879349ab44e1e"
 dependencies = [
  "environmental",
  "parity-scale-codec",
@@ -6241,7 +6243,7 @@ dependencies = [
 [[package]]
 name = "sc-executor-wasmi"
 version = "0.10.0-dev"
-source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#3c44b6a31dd678d9aa3cef453eb8cacd2333af2e"
+source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#595bc08b33c17316581f7ae8be5879349ab44e1e"
 dependencies = [
  "log",
  "parity-scale-codec",
@@ -6256,7 +6258,7 @@ dependencies = [
 [[package]]
 name = "sc-executor-wasmtime"
 version = "0.10.0-dev"
-source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#3c44b6a31dd678d9aa3cef453eb8cacd2333af2e"
+source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#595bc08b33c17316581f7ae8be5879349ab44e1e"
 dependencies = [
  "cfg-if",
  "libc",
@@ -6276,7 +6278,7 @@ dependencies = [
 [[package]]
 name = "sc-finality-grandpa"
 version = "0.10.0-dev"
-source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#3c44b6a31dd678d9aa3cef453eb8cacd2333af2e"
+source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#595bc08b33c17316581f7ae8be5879349ab44e1e"
 dependencies = [
  "ahash",
  "array-bytes",
@@ -6317,7 +6319,7 @@ dependencies = [
 [[package]]
 name = "sc-informant"
 version = "0.10.0-dev"
-source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#3c44b6a31dd678d9aa3cef453eb8cacd2333af2e"
+source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#595bc08b33c17316581f7ae8be5879349ab44e1e"
 dependencies = [
  "ansi_term",
  "futures",
@@ -6334,7 +6336,7 @@ dependencies = [
 [[package]]
 name = "sc-keystore"
 version = "4.0.0-dev"
-source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#3c44b6a31dd678d9aa3cef453eb8cacd2333af2e"
+source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#595bc08b33c17316581f7ae8be5879349ab44e1e"
 dependencies = [
  "array-bytes",
  "async-trait",
@@ -6349,7 +6351,7 @@ dependencies = [
 [[package]]
 name = "sc-network"
 version = "0.10.0-dev"
-source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#3c44b6a31dd678d9aa3cef453eb8cacd2333af2e"
+source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#595bc08b33c17316581f7ae8be5879349ab44e1e"
 dependencies = [
  "array-bytes",
  "async-trait",
@@ -6396,7 +6398,7 @@ dependencies = [
 [[package]]
 name = "sc-network-bitswap"
 version = "0.10.0-dev"
-source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#3c44b6a31dd678d9aa3cef453eb8cacd2333af2e"
+source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#595bc08b33c17316581f7ae8be5879349ab44e1e"
 dependencies = [
  "cid",
  "futures",
@@ -6416,7 +6418,7 @@ dependencies = [
 [[package]]
 name = "sc-network-common"
 version = "0.10.0-dev"
-source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#3c44b6a31dd678d9aa3cef453eb8cacd2333af2e"
+source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#595bc08b33c17316581f7ae8be5879349ab44e1e"
 dependencies = [
  "async-trait",
  "bitflags",
@@ -6442,7 +6444,7 @@ dependencies = [
 [[package]]
 name = "sc-network-gossip"
 version = "0.10.0-dev"
-source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#3c44b6a31dd678d9aa3cef453eb8cacd2333af2e"
+source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#595bc08b33c17316581f7ae8be5879349ab44e1e"
 dependencies = [
  "ahash",
  "futures",
@@ -6460,7 +6462,7 @@ dependencies = [
 [[package]]
 name = "sc-network-light"
 version = "0.10.0-dev"
-source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#3c44b6a31dd678d9aa3cef453eb8cacd2333af2e"
+source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#595bc08b33c17316581f7ae8be5879349ab44e1e"
 dependencies = [
  "array-bytes",
  "futures",
@@ -6481,7 +6483,7 @@ dependencies = [
 [[package]]
 name = "sc-network-sync"
 version = "0.10.0-dev"
-source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#3c44b6a31dd678d9aa3cef453eb8cacd2333af2e"
+source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#595bc08b33c17316581f7ae8be5879349ab44e1e"
 dependencies = [
  "array-bytes",
  "fork-tree",
@@ -6511,7 +6513,7 @@ dependencies = [
 [[package]]
 name = "sc-network-transactions"
 version = "0.10.0-dev"
-source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#3c44b6a31dd678d9aa3cef453eb8cacd2333af2e"
+source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#595bc08b33c17316581f7ae8be5879349ab44e1e"
 dependencies = [
  "array-bytes",
  "futures",
@@ -6530,7 +6532,7 @@ dependencies = [
 [[package]]
 name = "sc-offchain"
 version = "4.0.0-dev"
-source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#3c44b6a31dd678d9aa3cef453eb8cacd2333af2e"
+source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#595bc08b33c17316581f7ae8be5879349ab44e1e"
 dependencies = [
  "array-bytes",
  "bytes",
@@ -6560,7 +6562,7 @@ dependencies = [
 [[package]]
 name = "sc-peerset"
 version = "4.0.0-dev"
-source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#3c44b6a31dd678d9aa3cef453eb8cacd2333af2e"
+source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#595bc08b33c17316581f7ae8be5879349ab44e1e"
 dependencies = [
  "futures",
  "libp2p",
@@ -6573,7 +6575,7 @@ dependencies = [
 [[package]]
 name = "sc-proposer-metrics"
 version = "0.10.0-dev"
-source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#3c44b6a31dd678d9aa3cef453eb8cacd2333af2e"
+source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#595bc08b33c17316581f7ae8be5879349ab44e1e"
 dependencies = [
  "log",
  "substrate-prometheus-endpoint",
@@ -6582,7 +6584,7 @@ dependencies = [
 [[package]]
 name = "sc-rpc"
 version = "4.0.0-dev"
-source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#3c44b6a31dd678d9aa3cef453eb8cacd2333af2e"
+source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#595bc08b33c17316581f7ae8be5879349ab44e1e"
 dependencies = [
  "futures",
  "hash-db",
@@ -6612,7 +6614,7 @@ dependencies = [
 [[package]]
 name = "sc-rpc-api"
 version = "0.10.0-dev"
-source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#3c44b6a31dd678d9aa3cef453eb8cacd2333af2e"
+source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#595bc08b33c17316581f7ae8be5879349ab44e1e"
 dependencies = [
  "futures",
  "jsonrpsee",
@@ -6635,7 +6637,7 @@ dependencies = [
 [[package]]
 name = "sc-rpc-server"
 version = "4.0.0-dev"
-source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#3c44b6a31dd678d9aa3cef453eb8cacd2333af2e"
+source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#595bc08b33c17316581f7ae8be5879349ab44e1e"
 dependencies = [
  "futures",
  "jsonrpsee",
@@ -6648,7 +6650,7 @@ dependencies = [
 [[package]]
 name = "sc-rpc-spec-v2"
 version = "0.10.0-dev"
-source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#3c44b6a31dd678d9aa3cef453eb8cacd2333af2e"
+source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#595bc08b33c17316581f7ae8be5879349ab44e1e"
 dependencies = [
  "futures",
  "hex",
@@ -6667,7 +6669,7 @@ dependencies = [
 [[package]]
 name = "sc-service"
 version = "0.10.0-dev"
-source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#3c44b6a31dd678d9aa3cef453eb8cacd2333af2e"
+source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#595bc08b33c17316581f7ae8be5879349ab44e1e"
 dependencies = [
  "async-trait",
  "directories",
@@ -6738,7 +6740,7 @@ dependencies = [
 [[package]]
 name = "sc-state-db"
 version = "0.10.0-dev"
-source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#3c44b6a31dd678d9aa3cef453eb8cacd2333af2e"
+source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#595bc08b33c17316581f7ae8be5879349ab44e1e"
 dependencies = [
  "log",
  "parity-scale-codec",
@@ -6752,7 +6754,7 @@ dependencies = [
 [[package]]
 name = "sc-sysinfo"
 version = "6.0.0-dev"
-source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#3c44b6a31dd678d9aa3cef453eb8cacd2333af2e"
+source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#595bc08b33c17316581f7ae8be5879349ab44e1e"
 dependencies = [
  "futures",
  "libc",
@@ -6771,7 +6773,7 @@ dependencies = [
 [[package]]
 name = "sc-telemetry"
 version = "4.0.0-dev"
-source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#3c44b6a31dd678d9aa3cef453eb8cacd2333af2e"
+source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#595bc08b33c17316581f7ae8be5879349ab44e1e"
 dependencies = [
  "chrono",
  "futures",
@@ -6789,7 +6791,7 @@ dependencies = [
 [[package]]
 name = "sc-tracing"
 version = "4.0.0-dev"
-source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#3c44b6a31dd678d9aa3cef453eb8cacd2333af2e"
+source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#595bc08b33c17316581f7ae8be5879349ab44e1e"
 dependencies = [
  "ansi_term",
  "atty",
@@ -6820,7 +6822,7 @@ dependencies = [
 [[package]]
 name = "sc-tracing-proc-macro"
 version = "4.0.0-dev"
-source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#3c44b6a31dd678d9aa3cef453eb8cacd2333af2e"
+source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#595bc08b33c17316581f7ae8be5879349ab44e1e"
 dependencies = [
  "proc-macro-crate",
  "proc-macro2",
@@ -6831,7 +6833,7 @@ dependencies = [
 [[package]]
 name = "sc-transaction-pool"
 version = "4.0.0-dev"
-source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#3c44b6a31dd678d9aa3cef453eb8cacd2333af2e"
+source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#595bc08b33c17316581f7ae8be5879349ab44e1e"
 dependencies = [
  "async-trait",
  "bincode",
@@ -6860,7 +6862,7 @@ dependencies = [
 [[package]]
 name = "sc-transaction-pool-api"
 version = "4.0.0-dev"
-source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#3c44b6a31dd678d9aa3cef453eb8cacd2333af2e"
+source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#595bc08b33c17316581f7ae8be5879349ab44e1e"
 dependencies = [
  "async-trait",
  "futures",
@@ -6874,7 +6876,7 @@ dependencies = [
 [[package]]
 name = "sc-utils"
 version = "4.0.0-dev"
-source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#3c44b6a31dd678d9aa3cef453eb8cacd2333af2e"
+source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#595bc08b33c17316581f7ae8be5879349ab44e1e"
 dependencies = [
  "futures",
  "futures-timer",
@@ -7275,7 +7277,7 @@ dependencies = [
 [[package]]
 name = "sp-api"
 version = "4.0.0-dev"
-source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#3c44b6a31dd678d9aa3cef453eb8cacd2333af2e"
+source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#595bc08b33c17316581f7ae8be5879349ab44e1e"
 dependencies = [
  "hash-db",
  "log",
@@ -7293,7 +7295,7 @@ dependencies = [
 [[package]]
 name = "sp-api-proc-macro"
 version = "4.0.0-dev"
-source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#3c44b6a31dd678d9aa3cef453eb8cacd2333af2e"
+source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#595bc08b33c17316581f7ae8be5879349ab44e1e"
 dependencies = [
  "blake2",
  "proc-macro-crate",
@@ -7305,7 +7307,7 @@ dependencies = [
 [[package]]
 name = "sp-application-crypto"
 version = "6.0.0"
-source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#3c44b6a31dd678d9aa3cef453eb8cacd2333af2e"
+source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#595bc08b33c17316581f7ae8be5879349ab44e1e"
 dependencies = [
  "parity-scale-codec",
  "scale-info",
@@ -7318,7 +7320,7 @@ dependencies = [
 [[package]]
 name = "sp-arithmetic"
 version = "5.0.0"
-source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#3c44b6a31dd678d9aa3cef453eb8cacd2333af2e"
+source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#595bc08b33c17316581f7ae8be5879349ab44e1e"
 dependencies = [
  "integer-sqrt",
  "num-traits",
@@ -7333,7 +7335,7 @@ dependencies = [
 [[package]]
 name = "sp-authorship"
 version = "4.0.0-dev"
-source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#3c44b6a31dd678d9aa3cef453eb8cacd2333af2e"
+source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#595bc08b33c17316581f7ae8be5879349ab44e1e"
 dependencies = [
  "async-trait",
  "parity-scale-codec",
@@ -7345,7 +7347,7 @@ dependencies = [
 [[package]]
 name = "sp-block-builder"
 version = "4.0.0-dev"
-source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#3c44b6a31dd678d9aa3cef453eb8cacd2333af2e"
+source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#595bc08b33c17316581f7ae8be5879349ab44e1e"
 dependencies = [
  "parity-scale-codec",
  "sp-api",
@@ -7357,7 +7359,7 @@ dependencies = [
 [[package]]
 name = "sp-blockchain"
 version = "4.0.0-dev"
-source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#3c44b6a31dd678d9aa3cef453eb8cacd2333af2e"
+source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#595bc08b33c17316581f7ae8be5879349ab44e1e"
 dependencies = [
  "futures",
  "log",
@@ -7375,7 +7377,7 @@ dependencies = [
 [[package]]
 name = "sp-consensus"
 version = "0.10.0-dev"
-source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#3c44b6a31dd678d9aa3cef453eb8cacd2333af2e"
+source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#595bc08b33c17316581f7ae8be5879349ab44e1e"
 dependencies = [
  "async-trait",
  "futures",
@@ -7394,7 +7396,7 @@ dependencies = [
 [[package]]
 name = "sp-consensus-aura"
 version = "0.10.0-dev"
-source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#3c44b6a31dd678d9aa3cef453eb8cacd2333af2e"
+source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#595bc08b33c17316581f7ae8be5879349ab44e1e"
 dependencies = [
  "async-trait",
  "parity-scale-codec",
@@ -7412,7 +7414,7 @@ dependencies = [
 [[package]]
 name = "sp-consensus-babe"
 version = "0.10.0-dev"
-source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#3c44b6a31dd678d9aa3cef453eb8cacd2333af2e"
+source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#595bc08b33c17316581f7ae8be5879349ab44e1e"
 dependencies = [
  "async-trait",
  "merlin",
@@ -7435,7 +7437,7 @@ dependencies = [
 [[package]]
 name = "sp-consensus-slots"
 version = "0.10.0-dev"
-source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#3c44b6a31dd678d9aa3cef453eb8cacd2333af2e"
+source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#595bc08b33c17316581f7ae8be5879349ab44e1e"
 dependencies = [
  "parity-scale-codec",
  "scale-info",
@@ -7449,7 +7451,7 @@ dependencies = [
 [[package]]
 name = "sp-consensus-vrf"
 version = "0.10.0-dev"
-source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#3c44b6a31dd678d9aa3cef453eb8cacd2333af2e"
+source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#595bc08b33c17316581f7ae8be5879349ab44e1e"
 dependencies = [
  "parity-scale-codec",
  "scale-info",
@@ -7462,7 +7464,7 @@ dependencies = [
 [[package]]
 name = "sp-core"
 version = "6.0.0"
-source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#3c44b6a31dd678d9aa3cef453eb8cacd2333af2e"
+source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#595bc08b33c17316581f7ae8be5879349ab44e1e"
 dependencies = [
  "array-bytes",
  "base58",
@@ -7508,7 +7510,7 @@ dependencies = [
 [[package]]
 name = "sp-core-hashing"
 version = "4.0.0"
-source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#3c44b6a31dd678d9aa3cef453eb8cacd2333af2e"
+source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#595bc08b33c17316581f7ae8be5879349ab44e1e"
 dependencies = [
  "blake2",
  "byteorder",
@@ -7522,7 +7524,7 @@ dependencies = [
 [[package]]
 name = "sp-core-hashing-proc-macro"
 version = "5.0.0"
-source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#3c44b6a31dd678d9aa3cef453eb8cacd2333af2e"
+source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#595bc08b33c17316581f7ae8be5879349ab44e1e"
 dependencies = [
  "proc-macro2",
  "quote",
@@ -7533,7 +7535,7 @@ dependencies = [
 [[package]]
 name = "sp-database"
 version = "4.0.0-dev"
-source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#3c44b6a31dd678d9aa3cef453eb8cacd2333af2e"
+source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#595bc08b33c17316581f7ae8be5879349ab44e1e"
 dependencies = [
  "kvdb",
  "parking_lot 0.12.1",
@@ -7542,7 +7544,7 @@ dependencies = [
 [[package]]
 name = "sp-debug-derive"
 version = "4.0.0"
-source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#3c44b6a31dd678d9aa3cef453eb8cacd2333af2e"
+source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#595bc08b33c17316581f7ae8be5879349ab44e1e"
 dependencies = [
  "proc-macro2",
  "quote",
@@ -7552,7 +7554,7 @@ dependencies = [
 [[package]]
 name = "sp-externalities"
 version = "0.12.0"
-source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#3c44b6a31dd678d9aa3cef453eb8cacd2333af2e"
+source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#595bc08b33c17316581f7ae8be5879349ab44e1e"
 dependencies = [
  "environmental",
  "parity-scale-codec",
@@ -7563,7 +7565,7 @@ dependencies = [
 [[package]]
 name = "sp-finality-grandpa"
 version = "4.0.0-dev"
-source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#3c44b6a31dd678d9aa3cef453eb8cacd2333af2e"
+source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#595bc08b33c17316581f7ae8be5879349ab44e1e"
 dependencies = [
  "finality-grandpa",
  "log",
@@ -7581,7 +7583,7 @@ dependencies = [
 [[package]]
 name = "sp-inherents"
 version = "4.0.0-dev"
-source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#3c44b6a31dd678d9aa3cef453eb8cacd2333af2e"
+source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#595bc08b33c17316581f7ae8be5879349ab44e1e"
 dependencies = [
  "async-trait",
  "impl-trait-for-tuples",
@@ -7595,7 +7597,7 @@ dependencies = [
 [[package]]
 name = "sp-io"
 version = "6.0.0"
-source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#3c44b6a31dd678d9aa3cef453eb8cacd2333af2e"
+source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#595bc08b33c17316581f7ae8be5879349ab44e1e"
 dependencies = [
  "bytes",
  "futures",
@@ -7621,7 +7623,7 @@ dependencies = [
 [[package]]
 name = "sp-keyring"
 version = "6.0.0"
-source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#3c44b6a31dd678d9aa3cef453eb8cacd2333af2e"
+source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#595bc08b33c17316581f7ae8be5879349ab44e1e"
 dependencies = [
  "lazy_static",
  "sp-core",
@@ -7632,7 +7634,7 @@ dependencies = [
 [[package]]
 name = "sp-keystore"
 version = "0.12.0"
-source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#3c44b6a31dd678d9aa3cef453eb8cacd2333af2e"
+source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#595bc08b33c17316581f7ae8be5879349ab44e1e"
 dependencies = [
  "async-trait",
  "futures",
@@ -7649,11 +7651,12 @@ dependencies = [
 [[package]]
 name = "sp-lattice"
 version = "0.1.0"
-source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#3c44b6a31dd678d9aa3cef453eb8cacd2333af2e"
+source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#595bc08b33c17316581f7ae8be5879349ab44e1e"
 dependencies = [
  "async-trait",
  "log",
  "parity-scale-codec",
+ "scale-info",
  "sp-inherents",
  "sp-runtime",
  "sp-std",
@@ -7663,7 +7666,7 @@ dependencies = [
 [[package]]
 name = "sp-maybe-compressed-blob"
 version = "4.1.0-dev"
-source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#3c44b6a31dd678d9aa3cef453eb8cacd2333af2e"
+source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#595bc08b33c17316581f7ae8be5879349ab44e1e"
 dependencies = [
  "thiserror",
  "zstd",
@@ -7672,7 +7675,7 @@ dependencies = [
 [[package]]
 name = "sp-mmr-primitives"
 version = "4.0.0-dev"
-source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#3c44b6a31dd678d9aa3cef453eb8cacd2333af2e"
+source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#595bc08b33c17316581f7ae8be5879349ab44e1e"
 dependencies = [
  "log",
  "parity-scale-codec",
@@ -7688,7 +7691,7 @@ dependencies = [
 [[package]]
 name = "sp-offchain"
 version = "4.0.0-dev"
-source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#3c44b6a31dd678d9aa3cef453eb8cacd2333af2e"
+source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#595bc08b33c17316581f7ae8be5879349ab44e1e"
 dependencies = [
  "sp-api",
  "sp-core",
@@ -7698,7 +7701,7 @@ dependencies = [
 [[package]]
 name = "sp-panic-handler"
 version = "4.0.0"
-source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#3c44b6a31dd678d9aa3cef453eb8cacd2333af2e"
+source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#595bc08b33c17316581f7ae8be5879349ab44e1e"
 dependencies = [
  "backtrace",
  "lazy_static",
@@ -7708,7 +7711,7 @@ dependencies = [
 [[package]]
 name = "sp-rpc"
 version = "6.0.0"
-source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#3c44b6a31dd678d9aa3cef453eb8cacd2333af2e"
+source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#595bc08b33c17316581f7ae8be5879349ab44e1e"
 dependencies = [
  "rustc-hash",
  "serde",
@@ -7718,7 +7721,7 @@ dependencies = [
 [[package]]
 name = "sp-runtime"
 version = "6.0.0"
-source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#3c44b6a31dd678d9aa3cef453eb8cacd2333af2e"
+source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#595bc08b33c17316581f7ae8be5879349ab44e1e"
 dependencies = [
  "either",
  "hash256-std-hasher",
@@ -7741,7 +7744,7 @@ dependencies = [
 [[package]]
 name = "sp-runtime-interface"
 version = "6.0.0"
-source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#3c44b6a31dd678d9aa3cef453eb8cacd2333af2e"
+source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#595bc08b33c17316581f7ae8be5879349ab44e1e"
 dependencies = [
  "bytes",
  "impl-trait-for-tuples",
@@ -7759,7 +7762,7 @@ dependencies = [
 [[package]]
 name = "sp-runtime-interface-proc-macro"
 version = "5.0.0"
-source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#3c44b6a31dd678d9aa3cef453eb8cacd2333af2e"
+source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#595bc08b33c17316581f7ae8be5879349ab44e1e"
 dependencies = [
  "Inflector",
  "proc-macro-crate",
@@ -7771,7 +7774,7 @@ dependencies = [
 [[package]]
 name = "sp-sandbox"
 version = "0.10.0-dev"
-source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#3c44b6a31dd678d9aa3cef453eb8cacd2333af2e"
+source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#595bc08b33c17316581f7ae8be5879349ab44e1e"
 dependencies = [
  "log",
  "parity-scale-codec",
@@ -7785,7 +7788,7 @@ dependencies = [
 [[package]]
 name = "sp-session"
 version = "4.0.0-dev"
-source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#3c44b6a31dd678d9aa3cef453eb8cacd2333af2e"
+source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#595bc08b33c17316581f7ae8be5879349ab44e1e"
 dependencies = [
  "parity-scale-codec",
  "scale-info",
@@ -7799,7 +7802,7 @@ dependencies = [
 [[package]]
 name = "sp-staking"
 version = "4.0.0-dev"
-source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#3c44b6a31dd678d9aa3cef453eb8cacd2333af2e"
+source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#595bc08b33c17316581f7ae8be5879349ab44e1e"
 dependencies = [
  "parity-scale-codec",
  "scale-info",
@@ -7810,7 +7813,7 @@ dependencies = [
 [[package]]
 name = "sp-state-machine"
 version = "0.12.0"
-source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#3c44b6a31dd678d9aa3cef453eb8cacd2333af2e"
+source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#595bc08b33c17316581f7ae8be5879349ab44e1e"
 dependencies = [
  "hash-db",
  "log",
@@ -7832,12 +7835,12 @@ dependencies = [
 [[package]]
 name = "sp-std"
 version = "4.0.0"
-source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#3c44b6a31dd678d9aa3cef453eb8cacd2333af2e"
+source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#595bc08b33c17316581f7ae8be5879349ab44e1e"
 
 [[package]]
 name = "sp-storage"
 version = "6.0.0"
-source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#3c44b6a31dd678d9aa3cef453eb8cacd2333af2e"
+source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#595bc08b33c17316581f7ae8be5879349ab44e1e"
 dependencies = [
  "impl-serde",
  "parity-scale-codec",
@@ -7850,7 +7853,7 @@ dependencies = [
 [[package]]
 name = "sp-tasks"
 version = "4.0.0-dev"
-source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#3c44b6a31dd678d9aa3cef453eb8cacd2333af2e"
+source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#595bc08b33c17316581f7ae8be5879349ab44e1e"
 dependencies = [
  "log",
  "sp-core",
@@ -7863,7 +7866,7 @@ dependencies = [
 [[package]]
 name = "sp-timestamp"
 version = "4.0.0-dev"
-source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#3c44b6a31dd678d9aa3cef453eb8cacd2333af2e"
+source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#595bc08b33c17316581f7ae8be5879349ab44e1e"
 dependencies = [
  "async-trait",
  "futures-timer",
@@ -7878,7 +7881,7 @@ dependencies = [
 [[package]]
 name = "sp-tracing"
 version = "5.0.0"
-source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#3c44b6a31dd678d9aa3cef453eb8cacd2333af2e"
+source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#595bc08b33c17316581f7ae8be5879349ab44e1e"
 dependencies = [
  "parity-scale-codec",
  "sp-std",
@@ -7890,7 +7893,7 @@ dependencies = [
 [[package]]
 name = "sp-transaction-pool"
 version = "4.0.0-dev"
-source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#3c44b6a31dd678d9aa3cef453eb8cacd2333af2e"
+source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#595bc08b33c17316581f7ae8be5879349ab44e1e"
 dependencies = [
  "sp-api",
  "sp-runtime",
@@ -7899,7 +7902,7 @@ dependencies = [
 [[package]]
 name = "sp-transaction-storage-proof"
 version = "4.0.0-dev"
-source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#3c44b6a31dd678d9aa3cef453eb8cacd2333af2e"
+source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#595bc08b33c17316581f7ae8be5879349ab44e1e"
 dependencies = [
  "async-trait",
  "log",
@@ -7915,7 +7918,7 @@ dependencies = [
 [[package]]
 name = "sp-trie"
 version = "6.0.0"
-source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#3c44b6a31dd678d9aa3cef453eb8cacd2333af2e"
+source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#595bc08b33c17316581f7ae8be5879349ab44e1e"
 dependencies = [
  "ahash",
  "hash-db",
@@ -7938,7 +7941,7 @@ dependencies = [
 [[package]]
 name = "sp-version"
 version = "5.0.0"
-source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#3c44b6a31dd678d9aa3cef453eb8cacd2333af2e"
+source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#595bc08b33c17316581f7ae8be5879349ab44e1e"
 dependencies = [
  "impl-serde",
  "parity-scale-codec",
@@ -7955,7 +7958,7 @@ dependencies = [
 [[package]]
 name = "sp-version-proc-macro"
 version = "4.0.0-dev"
-source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#3c44b6a31dd678d9aa3cef453eb8cacd2333af2e"
+source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#595bc08b33c17316581f7ae8be5879349ab44e1e"
 dependencies = [
  "parity-scale-codec",
  "proc-macro2",
@@ -7966,7 +7969,7 @@ dependencies = [
 [[package]]
 name = "sp-wasm-interface"
 version = "6.0.0"
-source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#3c44b6a31dd678d9aa3cef453eb8cacd2333af2e"
+source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#595bc08b33c17316581f7ae8be5879349ab44e1e"
 dependencies = [
  "impl-trait-for-tuples",
  "log",
@@ -7979,7 +7982,7 @@ dependencies = [
 [[package]]
 name = "sp-weights"
 version = "4.0.0"
-source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#3c44b6a31dd678d9aa3cef453eb8cacd2333af2e"
+source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#595bc08b33c17316581f7ae8be5879349ab44e1e"
 dependencies = [
  "impl-trait-for-tuples",
  "parity-scale-codec",
@@ -8000,9 +8003,9 @@ checksum = "6e63cff320ae2c57904679ba7cb63280a3dc4613885beafb148ee7bf9aa9042d"
 
 [[package]]
 name = "spin"
-version = "0.9.4"
+version = "0.9.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "7f6002a767bff9e83f8eeecf883ecb8011875a21ae8da43bffb817a57e78cc09"
+checksum = "7dccf47db1b41fa1573ed27ccf5e08e3ca771cb994f776668c5ebda893b248fc"
 dependencies = [
  "lock_api",
 ]
@@ -8142,7 +8145,7 @@ dependencies = [
 [[package]]
 name = "substrate-build-script-utils"
 version = "3.0.0"
-source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#3c44b6a31dd678d9aa3cef453eb8cacd2333af2e"
+source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#595bc08b33c17316581f7ae8be5879349ab44e1e"
 dependencies = [
  "platforms",
 ]
@@ -8150,7 +8153,7 @@ dependencies = [
 [[package]]
 name = "substrate-frame-rpc-system"
 version = "4.0.0-dev"
-source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#3c44b6a31dd678d9aa3cef453eb8cacd2333af2e"
+source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#595bc08b33c17316581f7ae8be5879349ab44e1e"
 dependencies = [
  "frame-system-rpc-runtime-api",
  "futures",
@@ -8171,7 +8174,7 @@ dependencies = [
 [[package]]
 name = "substrate-prometheus-endpoint"
 version = "0.10.0-dev"
-source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#3c44b6a31dd678d9aa3cef453eb8cacd2333af2e"
+source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#595bc08b33c17316581f7ae8be5879349ab44e1e"
 dependencies = [
  "futures-util",
  "hyper",
@@ -8184,7 +8187,7 @@ dependencies = [
 [[package]]
 name = "substrate-test-client"
 version = "2.0.1"
-source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#3c44b6a31dd678d9aa3cef453eb8cacd2333af2e"
+source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#595bc08b33c17316581f7ae8be5879349ab44e1e"
 dependencies = [
  "array-bytes",
  "async-trait",
@@ -8210,7 +8213,7 @@ dependencies = [
 [[package]]
 name = "substrate-test-runtime"
 version = "2.0.0"
-source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#3c44b6a31dd678d9aa3cef453eb8cacd2333af2e"
+source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#595bc08b33c17316581f7ae8be5879349ab44e1e"
 dependencies = [
  "beefy-merkle-tree",
  "beefy-primitives",
@@ -8254,7 +8257,7 @@ dependencies = [
 [[package]]
 name = "substrate-test-runtime-client"
 version = "2.0.0"
-source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#3c44b6a31dd678d9aa3cef453eb8cacd2333af2e"
+source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#595bc08b33c17316581f7ae8be5879349ab44e1e"
 dependencies = [
  "futures",
  "parity-scale-codec",
@@ -8273,7 +8276,7 @@ dependencies = [
 [[package]]
 name = "substrate-wasm-builder"
 version = "5.0.0-dev"
-source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#3c44b6a31dd678d9aa3cef453eb8cacd2333af2e"
+source = "git+https://github.com/telcoin/substrate?branch=lattice-custom-block-grant#595bc08b33c17316581f7ae8be5879349ab44e1e"
 dependencies = [
  "ansi_term",
  "build-helper",
