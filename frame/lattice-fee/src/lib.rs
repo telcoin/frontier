@@ -120,17 +120,15 @@ pub mod pallet {
 	#[pallet::hooks]
 	impl<T: Config> Hooks<BlockNumberFor<T>> for Pallet<T> {
 		fn on_initialize(_: T::BlockNumber) -> Weight {
-			// Register the Weight used on_finalize.
-			// 	- One storage read to get the block_weight.
-			// 	- One storage read to get the Elasticity.
-			// 	- One write to BaseFeePerGas.
-			let db_weight = <T as frame_system::Config>::DbWeight::get();
 			let category = frame_system::Pallet::<T>::digest().logs().iter()
 				.filter_map(|s| s.as_pre_runtime())
 				.find_map(|(id, mut data)| {
 					match id == sp_lattice::LATTICE_ENGINE_ID {
 						true => sp_lattice::Category::decode(&mut data).ok(),
-						false => None,
+						false => {
+							log::info!("\nCategory not found in PreRuntime digests.... setting default");
+							None
+						},
 					}
 				}).unwrap_or_default();
 
@@ -139,6 +137,14 @@ pub mod pallet {
 			log::info!("\n\n\n\n\n\n\n\n\n\n\n\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
 			log::info!("\ncategory in on_initialize: {category:?}");
 			log::info!("\n\n\n\n\n\n\n\n\n\n\n\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+
+
+			// Register the Weight used on_finalize.
+			// 	- One storage read to get the block_weight.
+			// 	- One storage read to get the Elasticity.
+			// 	- One write to BaseFeePerGas.
+			let db_weight = <T as frame_system::Config>::DbWeight::get();
+			// TODO: update reads/writes to db
 			db_weight.reads_writes(2, 1)
 		}
 
@@ -148,21 +154,6 @@ pub mod pallet {
 				return;
 			}
 
-			let digests = &frame_system::Pallet::<T>::digest().logs();
-			let category = frame_system::Pallet::<T>::digest().logs().iter()
-				.filter_map(|s| s.as_pre_runtime())
-				.find_map(|(id, mut data)| {
-					match id == sp_lattice::LATTICE_ENGINE_ID {
-						true => sp_lattice::Category::decode(&mut data).ok(),
-						false => None,
-					}
-				}).unwrap_or_default();
-
-			
-			
-			log::info!("\n\n\n\n\n\n\n\n\n\n\n\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
-			log::info!("\ncategory in on_finalize: {category:?}");
-			log::info!("\n\n\n\n\n\n\n\n\n\n\n\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
 
 
 			let lower = T::Threshold::lower();
@@ -246,16 +237,21 @@ pub mod pallet {
 
 impl<T: Config> fp_evm::FeeCalculator for Pallet<T> {
 	fn min_gas_price() -> (U256, Weight) {
+		log::info!("\n\n\nmin_gas_price() inside lattice-fee pallet called");
+		let base_fee_per_gas = <BaseFeePerGas<T>>::get();
+		log::info!("base_fee_per_gas inside lattice-fee pallet: {base_fee_per_gas:?}\n\n\n");
 		(<BaseFeePerGas<T>>::get(), T::DbWeight::get().reads(1))
 	}
 }
 
 impl<T: Config> Pallet<T> {
 	pub fn set_base_fee_per_gas_inner(value: U256) -> Weight {
+		log::info!("\n\n\nsetting base fee per gas inner: {value:?}");
 		<BaseFeePerGas<T>>::put(value);
 		T::DbWeight::get().writes(1)
 	}
 	pub fn set_elasticity_inner(value: Permill) -> Weight {
+		log::info!("\n\n\nsetting elasticity inner: {value:?}");
 		<Elasticity<T>>::put(value);
 		T::DbWeight::get().writes(1)
 	}
